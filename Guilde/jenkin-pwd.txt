@@ -1,0 +1,5 @@
+3176ebcaae6b4153b75c2f69c3bda505
+
+http://localhost:8081/job/Hellodeploy/
+
+41a6fdbc54f42243a738d21dbe25dc8c212e4e0e
