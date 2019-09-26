@@ -1,0 +1,222 @@
+
+2019-09-26 09:38:21 Commons Daemon procrun stdout initialized
+
+2019-09-26 11:30:56 Commons Daemon procrun stdout initialized
+INFO  ContextLoader - Root WebApplicationContext: initialization started
+INFO  XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Sep 26 14:36:59 IST 2019]; root of context hierarchy
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/business-config.xml]
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/datasource-config.xml]
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/tools-config.xml]
+INFO  PropertyPlaceholderConfigurer - Loading properties file from class path resource [spring/data-access.properties]
+INFO  PropertyPlaceholderConfigurer - Loading properties file from class path resource [spring/data-access.properties]
+INFO  LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'petclinic'
+INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: petclinic
+	...]
+INFO  Version - HHH000412: Hibernate Core {4.3.11.Final}
+INFO  Environment - HHH000206: hibernate.properties not found
+INFO  Environment - HHH000021: Bytecode provider name : javassist
+INFO  Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+INFO  Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+INFO  ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO  Version - HV000001: Hibernate Validator 5.2.4.Final
+INFO  ScriptUtils - Executing SQL script from class path resource [db/hsqldb/initDB.sql]
+INFO  ScriptUtils - Executed SQL script from class path resource [db/hsqldb/initDB.sql] in 26 ms.
+INFO  ScriptUtils - Executing SQL script from class path resource [db/hsqldb/populateDB.sql]
+INFO  ScriptUtils - Executed SQL script from class path resource [db/hsqldb/populateDB.sql] in 13 ms.
+INFO  EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+INFO  AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+INFO  AnnotationMBeanExporter - Bean with name 'callMonitor' has been autodetected for JMX exposure
+INFO  AnnotationMBeanExporter - Located managed bean 'callMonitor': registering with JMX server as MBean [petclinic:type=CallMonitor]
+INFO  ContextLoader - Root WebApplicationContext: initialization completed in 6674 ms
+INFO  DandelionFilter - Initializing the Dandelion context
+INFO  Context - Initializing configuration loader
+WARN  StandardConfigurationLoader - No file "dandelion.properties" was found in "dandelion/dandelion.properties" (classpath). The default configuration will be used.
+INFO  Configuration - ===========================================
+INFO  Configuration - 
+INFO  Configuration - Dandelion "dev" profile activated.
+INFO  Configuration - 
+INFO  Configuration - ===========================================
+INFO  Context - Scanning for components
+INFO  Context - Found component(s): ddl-core, ddl-dt
+INFO  Context - Initializing bundle loaders
+INFO  Context - Found bundle loader: dandelion-datatables
+INFO  Context - Found bundle loader: dandelion
+INFO  Context - Bundle loaders initialized: dandelion-datatables, dandelion
+INFO  Context - Initializing extra loaders
+INFO  Context - Extra loaders initialized: bower
+INFO  Context - Initializing asset locators
+INFO  Context - Found asset locator: classpath
+INFO  Context - Found asset locator: api
+INFO  Context - Found asset locator: webapp
+INFO  Context - Found asset locator: remote
+INFO  Context - Found asset locator: jar
+INFO  Context - Found asset locator: file
+INFO  Context - Initializing asset caching system
+INFO  Context - Found asset caching system: default
+INFO  Context - Asset cache system initialized: default
+INFO  Context - Initializing asset processors
+INFO  Context - Found asset processor: JsMinProcessor
+INFO  Context - Found asset processor: CssMinProcessor
+INFO  Context - Found asset processor: CssUrlRewritingProcessor
+INFO  Context - Asset processors disabled. All assets will be served as-is.
+INFO  Context - Initializing asset versioning
+INFO  Context - Found asset versioning strategy: content
+INFO  Context - Found asset versioning strategy: fixed
+INFO  Context - Selected asset versioning strategy: content
+INFO  Context - Initializing bundle storage
+INFO  Context - Bundle storage initialized with 65 bundles
+INFO  Context - Initializing asset storage
+INFO  Context - Asset storage initialized with: memory
+INFO  Context - Initializing handlers
+INFO  Context - Pre-handler (1/3) ReloadBundlePreHandler (rank: 0)
+INFO  Context - Pre-handler (2/3) ClearStoragePreHandler (rank: 0)
+INFO  Context - Pre-handler (3/3) ClearCachePreHandler (rank: 0)
+INFO  Context - Post-handler (1/6) ETagPostHandler (rank: 10)
+INFO  Context - Post-handler (2/6) AssetInjectionPostHandler (rank: 20)
+INFO  Context - Post-handler (3/6) GzipCompressionPostHandler (rank: 30)
+INFO  Context - Post-handler (4/6) ReportAlertPostHandler (rank: 30)
+INFO  Context - Post-handler (5/6) CacheHeaderPostHandler (rank: 40)
+INFO  Context - Post-handler (6/6) DebuggerPostHandler (rank: 50)
+INFO  DandelionFilter - Dandelion context initialized
+INFO  DispatcherServlet - FrameworkServlet 'petclinic': initialization started
+INFO  XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'petclinic-servlet': startup date [Thu Sep 26 14:37:07 IST 2019]; parent: Root WebApplicationContext
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/mvc-core-config.xml]
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/mvc-view-config.xml]
+INFO  Jaxb2Marshaller - Creating JAXBContext with classes to be bound [class org.springframework.samples.petclinic.model.Vets]
+INFO  RequestMappingHandlerMapping - Mapped "{[/oups],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.CrashController.triggerException()
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.processFindForm(org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/find],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.initFindForm(java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.samples.petclinic.web.OwnerController.showOwner(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/new],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.initCreationForm(java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/edit],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.initUpdateOwnerForm(int,org.springframework.ui.Model)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/new],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.processCreationForm(org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/edit],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.processUpdateOwnerForm(org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/{petId}/edit],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.PetController.initUpdateForm(int,org.springframework.ui.ModelMap)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/new],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.PetController.initCreationForm(org.springframework.samples.petclinic.model.Owner,org.springframework.ui.ModelMap)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/new],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.PetController.processCreationForm(org.springframework.samples.petclinic.model.Owner,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/{petId}/edit],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.PetController.processUpdateForm(org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult,org.springframework.samples.petclinic.model.Owner,org.springframework.ui.ModelMap)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets.xml || /vets.html]}" onto public java.lang.String org.springframework.samples.petclinic.web.VetController.showVetList(java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets.json]}" onto public org.springframework.samples.petclinic.model.Vets org.springframework.samples.petclinic.web.VetController.showResourcesVetList()
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/*/pets/{petId}/visits/new],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.VisitController.initNewVisitForm(int,java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/*/pets/{petId}/visits],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.VisitController.showVisits(int,java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/{petId}/visits/new],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.VisitController.processNewVisitForm(org.springframework.samples.petclinic.model.Visit,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'petclinic-servlet': startup date [Thu Sep 26 14:37:07 IST 2019]; parent: Root WebApplicationContext
+INFO  RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'petclinic-servlet': startup date [Thu Sep 26 14:37:07 IST 2019]; parent: Root WebApplicationContext
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/vendors/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+INFO  SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+INFO  DispatcherServlet - FrameworkServlet 'petclinic': initialization completed in 2291 ms
+INFO  XmlWebApplicationContext - Closing WebApplicationContext for namespace 'petclinic-servlet': startup date [Thu Sep 26 14:37:07 IST 2019]; parent: Root WebApplicationContext
+INFO  XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Sep 26 14:36:59 IST 2019]; root of context hierarchy
+INFO  AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+INFO  AnnotationMBeanExporter - Unregistering JMX-exposed beans
+INFO  EhCacheManagerFactoryBean - Shutting down EhCache CacheManager
+INFO  LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'petclinic'
+INFO  ContextLoader - Root WebApplicationContext: initialization started
+INFO  XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Sep 26 15:36:15 IST 2019]; root of context hierarchy
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/business-config.xml]
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/datasource-config.xml]
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/tools-config.xml]
+INFO  PropertyPlaceholderConfigurer - Loading properties file from class path resource [spring/data-access.properties]
+INFO  PropertyPlaceholderConfigurer - Loading properties file from class path resource [spring/data-access.properties]
+INFO  LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'petclinic'
+INFO  LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: petclinic
+	...]
+INFO  Version - HHH000412: Hibernate Core {4.3.11.Final}
+INFO  Environment - HHH000206: hibernate.properties not found
+INFO  Environment - HHH000021: Bytecode provider name : javassist
+INFO  Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+INFO  Dialect - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+INFO  ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+INFO  Version - HV000001: Hibernate Validator 5.2.4.Final
+INFO  ScriptUtils - Executing SQL script from class path resource [db/hsqldb/initDB.sql]
+INFO  ScriptUtils - Executed SQL script from class path resource [db/hsqldb/initDB.sql] in 9 ms.
+INFO  ScriptUtils - Executing SQL script from class path resource [db/hsqldb/populateDB.sql]
+INFO  ScriptUtils - Executed SQL script from class path resource [db/hsqldb/populateDB.sql] in 12 ms.
+INFO  EhCacheManagerFactoryBean - Initializing EhCache CacheManager
+INFO  AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+INFO  AnnotationMBeanExporter - Bean with name 'callMonitor' has been autodetected for JMX exposure
+INFO  AnnotationMBeanExporter - Located managed bean 'callMonitor': registering with JMX server as MBean [petclinic:type=CallMonitor]
+INFO  ContextLoader - Root WebApplicationContext: initialization completed in 4111 ms
+INFO  DandelionFilter - Initializing the Dandelion context
+INFO  Context - Initializing configuration loader
+WARN  StandardConfigurationLoader - No file "dandelion.properties" was found in "dandelion/dandelion.properties" (classpath). The default configuration will be used.
+INFO  Configuration - ===========================================
+INFO  Configuration - 
+INFO  Configuration - Dandelion "dev" profile activated.
+INFO  Configuration - 
+INFO  Configuration - ===========================================
+INFO  Context - Scanning for components
+INFO  Context - Found component(s): ddl-core, ddl-dt
+INFO  Context - Initializing bundle loaders
+INFO  Context - Found bundle loader: dandelion-datatables
+INFO  Context - Found bundle loader: dandelion
+INFO  Context - Bundle loaders initialized: dandelion-datatables, dandelion
+INFO  Context - Initializing extra loaders
+INFO  Context - Extra loaders initialized: bower
+INFO  Context - Initializing asset locators
+INFO  Context - Found asset locator: classpath
+INFO  Context - Found asset locator: api
+INFO  Context - Found asset locator: webapp
+INFO  Context - Found asset locator: remote
+INFO  Context - Found asset locator: jar
+INFO  Context - Found asset locator: file
+INFO  Context - Initializing asset caching system
+INFO  Context - Found asset caching system: default
+INFO  Context - Asset cache system initialized: default
+INFO  Context - Initializing asset processors
+INFO  Context - Found asset processor: JsMinProcessor
+INFO  Context - Found asset processor: CssMinProcessor
+INFO  Context - Found asset processor: CssUrlRewritingProcessor
+INFO  Context - Asset processors disabled. All assets will be served as-is.
+INFO  Context - Initializing asset versioning
+INFO  Context - Found asset versioning strategy: content
+INFO  Context - Found asset versioning strategy: fixed
+INFO  Context - Selected asset versioning strategy: content
+INFO  Context - Initializing bundle storage
+INFO  Context - Bundle storage initialized with 65 bundles
+INFO  Context - Initializing asset storage
+INFO  Context - Asset storage initialized with: memory
+INFO  Context - Initializing handlers
+INFO  Context - Pre-handler (1/3) ReloadBundlePreHandler (rank: 0)
+INFO  Context - Pre-handler (2/3) ClearStoragePreHandler (rank: 0)
+INFO  Context - Pre-handler (3/3) ClearCachePreHandler (rank: 0)
+INFO  Context - Post-handler (1/6) ETagPostHandler (rank: 10)
+INFO  Context - Post-handler (2/6) AssetInjectionPostHandler (rank: 20)
+INFO  Context - Post-handler (3/6) GzipCompressionPostHandler (rank: 30)
+INFO  Context - Post-handler (4/6) ReportAlertPostHandler (rank: 30)
+INFO  Context - Post-handler (5/6) CacheHeaderPostHandler (rank: 40)
+INFO  Context - Post-handler (6/6) DebuggerPostHandler (rank: 50)
+INFO  DandelionFilter - Dandelion context initialized
+INFO  DispatcherServlet - FrameworkServlet 'petclinic': initialization started
+INFO  XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'petclinic-servlet': startup date [Thu Sep 26 15:36:20 IST 2019]; parent: Root WebApplicationContext
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/mvc-core-config.xml]
+INFO  XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring/mvc-view-config.xml]
+INFO  Jaxb2Marshaller - Creating JAXBContext with classes to be bound [class org.springframework.samples.petclinic.model.Vets]
+INFO  RequestMappingHandlerMapping - Mapped "{[/oups],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.CrashController.triggerException()
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.processFindForm(org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/find],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.initFindForm(java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.samples.petclinic.web.OwnerController.showOwner(int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/new],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.initCreationForm(java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/edit],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.initUpdateOwnerForm(int,org.springframework.ui.Model)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/new],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.processCreationForm(org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/edit],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.OwnerController.processUpdateOwnerForm(org.springframework.samples.petclinic.model.Owner,org.springframework.validation.BindingResult,int)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/{petId}/edit],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.PetController.initUpdateForm(int,org.springframework.ui.ModelMap)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/new],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.PetController.initCreationForm(org.springframework.samples.petclinic.model.Owner,org.springframework.ui.ModelMap)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/new],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.PetController.processCreationForm(org.springframework.samples.petclinic.model.Owner,org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/{petId}/edit],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.PetController.processUpdateForm(org.springframework.samples.petclinic.model.Pet,org.springframework.validation.BindingResult,org.springframework.samples.petclinic.model.Owner,org.springframework.ui.ModelMap)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets.xml || /vets.html]}" onto public java.lang.String org.springframework.samples.petclinic.web.VetController.showVetList(java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/vets.json]}" onto public org.springframework.samples.petclinic.model.Vets org.springframework.samples.petclinic.web.VetController.showResourcesVetList()
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/*/pets/{petId}/visits/new],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.VisitController.initNewVisitForm(int,java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/*/pets/{petId}/visits],methods=[GET]}" onto public java.lang.String org.springframework.samples.petclinic.web.VisitController.showVisits(int,java.util.Map<java.lang.String, java.lang.Object>)
+INFO  RequestMappingHandlerMapping - Mapped "{[/owners/{ownerId}/pets/{petId}/visits/new],methods=[POST]}" onto public java.lang.String org.springframework.samples.petclinic.web.VisitController.processNewVisitForm(org.springframework.samples.petclinic.model.Visit,org.springframework.validation.BindingResult)
+INFO  RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'petclinic-servlet': startup date [Thu Sep 26 15:36:20 IST 2019]; parent: Root WebApplicationContext
+INFO  RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'petclinic-servlet': startup date [Thu Sep 26 15:36:20 IST 2019]; parent: Root WebApplicationContext
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/vendors/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+INFO  SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+INFO  SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+INFO  DispatcherServlet - FrameworkServlet 'petclinic': initialization completed in 1683 ms

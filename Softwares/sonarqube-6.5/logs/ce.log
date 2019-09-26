@@ -1,0 +1,18 @@
+2019.09.26 09:53:44 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2019.09.26 09:53:44 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2019.09.26 09:53:45 INFO  ce[][o.e.plugins] [Sunturion] modules [], plugins [], sites []
+2019.09.26 09:53:46 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2019.09.26 09:53:46 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2019.09.26 09:53:46 WARN  ce[][o.s.d.DatabaseChecker] H2 database should be used for evaluation purpose only
+2019.09.26 09:53:46 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: C:\jenkins_software\sonarqube-6.5
+2019.09.26 09:53:47 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2019.09.26 09:53:49 INFO  ce[][o.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Sat Mar 30 09:53:49 IST 2019
+2019.09.26 09:53:49 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2019.09.26 10:23:58 INFO  ce[AW1r6yylpB7-bMMgcLSi][o.s.c.t.CeWorkerImpl] Execute task | project=Hello1 | type=REPORT | id=AW1r6yylpB7-bMMgcLSi | submitter=admin
+2019.09.26 10:24:02 INFO  ce[AW1r6yylpB7-bMMgcLSi][o.s.c.t.CeWorkerImpl] Executed task | project=Hello1 | type=REPORT | id=AW1r6yylpB7-bMMgcLSi | submitter=admin | time=3468ms
+2019.09.26 12:10:32 INFO  ce[AW1sTMA1pB7-bMMgcLSj][o.s.c.t.CeWorkerImpl] Execute task | project=Hello1 | type=REPORT | id=AW1sTMA1pB7-bMMgcLSj | submitter=admin
+2019.09.26 12:10:34 INFO  ce[AW1sTMA1pB7-bMMgcLSj][o.s.c.t.CeWorkerImpl] Executed task | project=Hello1 | type=REPORT | id=AW1sTMA1pB7-bMMgcLSj | submitter=admin | time=1578ms
+2019.09.26 13:18:42 INFO  ce[AW1siyWrpB7-bMMgcLSk][o.s.c.t.CeWorkerImpl] Execute task | project=Hello1 | type=REPORT | id=AW1siyWrpB7-bMMgcLSk | submitter=admin
+2019.09.26 13:18:49 INFO  ce[AW1siyWrpB7-bMMgcLSk][o.s.c.t.CeWorkerImpl] Executed task | project=Hello1 | type=REPORT | id=AW1siyWrpB7-bMMgcLSk | submitter=admin | time=6978ms
+2019.09.26 15:25:34 INFO  ce[AW1s_0h3pB7-bMMgcLSl][o.s.c.t.CeWorkerImpl] Execute task | project=Hello1 | type=REPORT | id=AW1s_0h3pB7-bMMgcLSl | submitter=admin
+2019.09.26 15:25:38 INFO  ce[AW1s_0h3pB7-bMMgcLSl][o.s.c.t.CeWorkerImpl] Executed task | project=Hello1 | type=REPORT | id=AW1s_0h3pB7-bMMgcLSl | submitter=admin | time=4622ms

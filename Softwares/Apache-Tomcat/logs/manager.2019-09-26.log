@@ -1,0 +1,70 @@
+Sep 26, 2019 10:56:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Sep 26, 2019 10:56:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Global resources are available
+Sep 26, 2019 10:56:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 10:57:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Sep 26, 2019 10:57:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Sep 26, 2019 10:57:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 10:57:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: deploy: Deploying web application '/HelloWorld'
+Sep 26, 2019 10:57:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: Uploading WAR file to C:\jenkins_software\Apache-Tomcat\webapps\HelloWorld.war
+Sep 26, 2019 10:58:32 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 11:06:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 11:33:18 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Sep 26, 2019 11:33:18 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Sep 26, 2019 11:33:18 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 11:33:18 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 11:33:18 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/HelloWorld'
+Sep 26, 2019 11:33:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: deploy: Deploying web application '/HelloWorld'
+Sep 26, 2019 11:33:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: Uploading WAR file to C:\jenkins_software\Apache-Tomcat\webapps\HelloWorld.war
+Sep 26, 2019 11:36:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 11:36:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 11:36:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/HelloWorld'
+Sep 26, 2019 11:36:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: deploy: Deploying web application '/HelloWorld'
+Sep 26, 2019 11:36:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: Uploading WAR file to C:\jenkins_software\Apache-Tomcat\webapps\HelloWorld.war
+Sep 26, 2019 12:11:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 12:11:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 12:11:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/HelloWorld'
+Sep 26, 2019 12:11:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: deploy: Deploying web application '/HelloWorld'
+Sep 26, 2019 12:11:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: Uploading WAR file to C:\jenkins_software\Apache-Tomcat\webapps\HelloWorld.war
+Sep 26, 2019 2:36:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 2:36:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: deploy: Deploying web application '/HelloPet'
+Sep 26, 2019 2:36:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: Uploading WAR file to C:\jenkins_software\Apache-Tomcat\webapps\HelloPet.war
+Sep 26, 2019 3:35:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 3:35:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 26, 2019 3:35:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/HelloPet'
+Sep 26, 2019 3:35:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: deploy: Deploying web application '/HelloPet'
+Sep 26, 2019 3:35:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: Uploading WAR file to C:\jenkins_software\Apache-Tomcat\webapps\HelloPet.war
